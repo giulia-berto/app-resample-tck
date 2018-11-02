@@ -45,8 +45,8 @@ if __name__ == '__main__':
 	tract = nib.streamlines.load(args.tract)
 	hdr = tract.header
 	tract = tract.streamlines
-	step_size = np.asarray(step_size, dtype='float64')
-	tract_res = resample_tract(tract, args.step_size)
-	save_tck_res(tract_res, hdr, args.step_size, args.out)
+	step_size = np.asarray(args.step_size, dtype='float64')
+	tract_res = resample_tract(tract, step_size)
+	save_tck_res(tract_res, hdr, step_size, args.out)
 
 	sys.exit() 
