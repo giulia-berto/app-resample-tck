@@ -4,13 +4,11 @@
 
 tract=`jq -r '.tract' config.json`
 step_size=`jq -r '.step_size' config.json`
-subjID=`jq -r '._inputs[0].meta.subject' config.json`
-run=`jq -r '.run' config.json`
 
 echo "Resampling tck file..."
-singularity exec -e docker://brainlife/dipy:0.14 python ./resampling_tract.py -tract $tract -step_size $step_size -out 'sub-'$subjID'_var-'${run}'_tract.tck'
+singularity exec -e docker://brainlife/dipy:0.14 python ./resampling_tract.py -tract $tract -step_size $step_size -out 'track.tck'
 
-if [ -f 'sub-'$subjID'_var-'${run}'_tract.tck' ]; then 
+if [ -f 'track.tck' ]; then 
     echo "Resampling done."
 else 
     echo "Resampling failed."
