@@ -75,6 +75,6 @@ if __name__ == '__main__':
 	elif res_type == 'nb_points':	
 		print("Resampling tract with %i number of points" % new_param)
 		tract_res = resample_tract_nb_points(tract, np.int(new_param))
-		save_tck_res_nb_points(tract_res, hdr, new_param, args.out)
+		save_tck_res_nb_points(tract_res, hdr, args.out)
 
 	sys.exit() 
