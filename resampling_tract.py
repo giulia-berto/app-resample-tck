@@ -15,9 +15,9 @@ def resample_tract(tract, step_size):
     lengths=list(length(tract))
     tract_res = []
     for i, f in enumerate(tract):
-	nb_res_points = np.int(np.floor(lengths[i]/step_size))
-	tmp = set_number_of_points(f, nb_res_points)
-	tract_res.append(tmp)
+    	nb_res_points = np.int(np.floor(lengths[i]/step_size))
+	    tmp = set_number_of_points(f, nb_res_points)
+	    tract_res.append(tmp)
     tract_res = nib.streamlines.array_sequence.ArraySequence(tract_res)
     return tract_res
 
@@ -27,8 +27,8 @@ def resample_tract_nb_points(tract, nb_res_points):
     """
     tract_res = []
     for i, f in enumerate(tract):
-	tmp = set_number_of_points(f, nb_res_points)
-	tract_res.append(tmp)
+    	tmp = set_number_of_points(f, nb_res_points)
+	    tract_res.append(tmp)
     tract_res = nib.streamlines.array_sequence.ArraySequence(tract_res)
     return tract_res
 
@@ -74,7 +74,7 @@ if __name__ == '__main__':
 		save_tck_res(tract_res, hdr, new_param, args.out)
 	elif res_type == 'nb_points':	
 		print("Resampling tract with %i number of points" % new_param)
-		tract_res = resample_tract_nb_points(tract, new_param)
+		tract_res = resample_tract_nb_points(tract, np.int(new_param))
 		save_tck_res_nb_points(tract_res, hdr, new_param, args.out)
 
 	sys.exit() 
