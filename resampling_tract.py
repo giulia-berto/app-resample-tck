@@ -16,8 +16,8 @@ def resample_tract(tract, step_size):
     tract_res = []
     for i, f in enumerate(tract):
     	nb_res_points = np.int(np.floor(lengths[i]/step_size))
-	    tmp = set_number_of_points(f, nb_res_points)
-	    tract_res.append(tmp)
+    	tmp = set_number_of_points(f, nb_res_points)
+    	tract_res.append(tmp)
     tract_res = nib.streamlines.array_sequence.ArraySequence(tract_res)
     return tract_res
 
@@ -28,7 +28,7 @@ def resample_tract_nb_points(tract, nb_res_points):
     tract_res = []
     for i, f in enumerate(tract):
     	tmp = set_number_of_points(f, nb_res_points)
-	    tract_res.append(tmp)
+    	tract_res.append(tmp)
     tract_res = nib.streamlines.array_sequence.ArraySequence(tract_res)
     return tract_res
 
