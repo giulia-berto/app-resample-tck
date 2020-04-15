@@ -2,7 +2,7 @@
 #PBS -k o
 #PBS -l nodes=1:ppn=1,walltime=0:10:00
 
-tract=`jq -r '.tract' config.json`
+tract=`jq -r '.track' config.json`
 type=`jq -r '.type' config.json`
 new_param=`jq -r '.new_param' config.json`
 
