@@ -1,7 +1,7 @@
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.124-blue.svg)](https://doi.org/10.25663/brainlife.app.124)
 
 # app-resample-tck
-This App resamples the streamlines of a tractogram (in tck format) with a give step size or, alternatively, with a given number of points.
+This App resamples the streamlines of a tractogram (in tck format) with a given step size or, alternatively, with a given number of points.
 
 ### Authors
 - Giulia Bertò (giulia.berto.4@gmail.com)
@@ -17,7 +17,7 @@ We kindly ask that you acknowledge the funding below in your publications and co
 You can submit this App online at https://doi.org/10.25663/brainlife.app.124 via the “Execute” tab.
 
 Input: \
-A tractogram in tck format. Resampling can be done either by setting the new step size or the new number of points. 
+A tractogram in tck format. Resampling can be done either by setting the new step size (in mm) or the new number of points. 
 
 Output: \
 The new resampled tractogram.
