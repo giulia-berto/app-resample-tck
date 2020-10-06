@@ -6,10 +6,12 @@ tract=`jq -r '.track' config.json`
 type=`jq -r '.type' config.json`
 new_param=`jq -r '.new_param' config.json`
 
-echo "Resampling tck file..."
-singularity exec -e docker://brainlife/dipy:0.14 python ./resampling_tract.py -tract $tract -type $type -new_param $new_param -out 'track.tck'
+mkdir -p tck
 
-if [ -f 'track.tck' ]; then 
+echo "Resampling tck file..."
+singularity exec -e docker://brainlife/dipy:0.14 python ./resampling_tract.py -tract $tract -type $type -new_param $new_param -out 'tck/track.tck'
+
+if [ -f 'tck/track.tck' ]; then 
     echo "Resampling done."
 else 
     echo "Resampling failed."
