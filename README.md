@@ -32,7 +32,7 @@ The new resampled tractogram.
 2. Inside the cloned directory, create `config.json` with something like the following content with paths to your input files:
 ```
 {
-    "trak": "./track.tck",
+    "track": "./track.tck",
     "type": "step_size",
     "new_param": 0.625
 }
@@ -46,4 +46,3 @@ The new resampled tractogram.
 This App only requires [singularity](https://sylabs.io/singularity/) to run.
 
 #### MIT Copyright (c) 2019 Giulia Bertò
-
