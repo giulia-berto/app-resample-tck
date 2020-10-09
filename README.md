@@ -12,6 +12,11 @@ We kindly ask that you acknowledge the funding below in your publications and co
 [![NSF-BCS-1636893](https://img.shields.io/badge/NSF_BCS-1636893-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1636893)
 [![NSF-AOC-1916518](https://img.shields.io/badge/NSF_AOC-1916518-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1916518)
 
+### Citation
+We kindly ask that you cite the following article when publishing papers and code using this code. 
+
+Avesani, P., McPherson, B., Hayashi, S. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [https://doi.org/10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
+
 ## Running the app
 ### On [Brainlife.io](http://brainlife.io/) 
 You can submit this App online at https://doi.org/10.25663/brainlife.app.124 via the “Execute” tab.
