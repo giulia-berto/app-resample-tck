@@ -52,6 +52,6 @@ The new resampled tractogram.
 The output file, called `track.tck`, is the resampled tractogram.
 
 ### Dependencies
-This App only requires [singularity](https://sylabs.io/singularity/) to run.
+This App requires [singularity](https://sylabs.io/singularity/) to run. If you don't have singularity, you will need to install following dependencies. It also requires [jq](https://stedolan.github.io/jq/).
 
 #### MIT Copyright (c) 2019 Giulia Bertò
